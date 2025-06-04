@@ -604,7 +604,8 @@ RUN apt-get update && apt-get install -y \
 # Install kubectl
 RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" \
     && chmod +x kubectl && mv kubectl /usr/local/bin/
-    
+
+RUN pip install configparser
 ENTRYPOINT ["/usr/local/bin/dockerd-entrypoint.sh"]
 
 #=======================END of STD:7.0  =================
