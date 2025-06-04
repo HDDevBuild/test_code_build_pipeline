@@ -598,7 +598,8 @@ RUN apt-get update && apt-get install -y \
     openssh-client \
     curl \
     unzip \
-    sudo
+    sudo \
+    openssl
 
 # Install kubectl
 RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" \
