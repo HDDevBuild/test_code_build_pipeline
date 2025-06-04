@@ -1,4 +1,4 @@
-FROM public.ecr.aws/codebuild/standard:6.0
+FROM public.ecr.aws/codebuild/standard:7.0
 # Update and install packages
 RUN apt-get update && apt-get install -y \
     git \
